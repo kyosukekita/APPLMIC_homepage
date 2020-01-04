@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The laboratory of Applied Microbiology (APPLMIC) is engaged in research on the useful bacteria that have potential application in bioindustry. ">
+  <meta name="author" content="APPLMIC">
+  <meta name="format-detection" content="telephone=no">
+  <title>APPLMIC - KOBE univ</title>
+  <link rel="stylesheet" href="css/table2.css"  media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="css/table.css" media="screen and (min-width: 768px)">
+  <link rel="stylesheet" href="css/style2.css" media="screen and (max-width: 768px)">
+  <link rel="stylesheet" href="css/style.css" media="screen and (min-width: 768px)">
+  <!-- fontawesome-->
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <!-- jQueryの読み込み -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- jQuery nanoGallery-->
+<link href="css/nanogallery.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.nanogallery.js"></script>
+<script type="text/javascript" src="js/jquery.typoshadow.js"></script>
+<script>
+  $(function(){
+    $('#navToggle').click(function(){
+      $('header').toggleClass('openNav');
+    });
+  });
+</script>
+<!-- jQuery リンクへスムーズにスクロール-->
+<script>
+      $(function(){
+        $('a[href^="#"]').click(function() {
+          var speed = 400;
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+</script>
+<!-- jQuery nanoGallery　https://webkaru.net/jquery-plugin/nanogallerより-->
+<script>
+$(document).ready(function () {
+  jQuery("#picture1,#picture2").nanoGallery({thumbnailWidth:100,thumbnailHeight:100,
+    itemsBaseURL:'img',
+    thumbnailHoverEffect:[{'name':'scaleLabelOverImage','duration':300},{'name':'borderLighter'}],
+    colorScheme:'clean',
+    thumbnailLabel:{display:true,position:'overImageOnTop', align:'center'},
+    viewerDisplayLogo:true
+  });
+});
+</script>
+
+<!-- iQuery typoshadow-->
+<script>
+$(function(){
+    $('.site-title').typoShadow();
+});
+</script>
+
+
+</head>
+
+<body>
+  <header>
+    <a href="index_English.html"><h1>APPLMIC</h1></a>
+    <div id="navToggle">
+      <div>
+        <span></span> <span></span> <span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="inner">
+        <li><i class="fas fa-home"></i><a href="#top"> Top</a></li>
+        <li><i class="fas fa-users"></i><a href="#people"> People</a></li>
+        <li><i class="fas fa-flask"></i><a href="#research"> Research</a></li>
+        <li><i class="fas fa-camera top_icon"></i><a href="#NEWS"> News</a></li>
+        <li><i class="far fa-envelope"></i><a href="#contact"> Contact</a></li>
+        <li><i class="fas fa-map-marker-alt"></i><a href="#access"> Access</a></li>
+        <li><a href="./index.html">Japanese</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<article>
+<div class="top_wrapper">
+  <div class="site-title-sub">Laboratory of applied microbiology</div>
+  <h1 class="site-title">APPLMIC</h1>
+
+    <div class="top" id="top">
+    1-1 Rokkodai, Nada, Kobe 657-8501, Japan
+    <br>Applied Microbiology, Bioproduction<br>
+    Department of Science, Technology and Innovation<br>
+    Graduate School of Science,Technology and Innovation<br>
+    <i class="fas fa-arrow-alt-circle-right"><a href="http://www.kobe-u.ac.jp/"></i>Kobe University </a>
+    <i class="fas fa-arrow-alt-circle-right"><a href="http://www.stin.kobe-u.ac.jp/"></i>Graduate School of Science,Technology and Innovation</a><br>
+    <i class="fas fa-arrow-alt-circle-right"><a href="http://www.ans.kobe-u.ac.jp//"></i>Department of Agriculture</a>
+    <i class="fas fa-arrow-alt-circle-right"><a href="BACELL/bacell_home.html" ></i>BACEll meeting 2020 homepage</a>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div>
+  <h2 class="heading">About US</h2>
+  <br>
+  <p>Welcome! The Laboratory of applied microbiology, APPLMIC is engaged in reseach on bacteria with potential for biotechnological application.
+  <br>Our research interests are:<br>
+    ・Basic research : elucidation of the function of beneficial genes in bacteria<br>
+    ・Applied Research : Microbial production of useful chemicals <br><br>
+    We aim to create "new microbiology" with the latest technology and free thinking. Innovation starts here!!!</p>
+  </div>
+</section>
+
+<section class="people" id="people">
+  <h2 class="heading">PEOPLE</h2>
+  <br>
+    <div>
+      <img src="img/yoshida.jpg">
+      <h4>Ken-ichi YOSHIDA, Ph.D.</h4>
+
+        <div class="hidden_box">
+          <label for="yoshida"><i class="fas fa-arrow-alt-circle-right"></i>Ken-ichi Yoshida</label>
+          <input type="checkbox" id="yoshida"/>
+          <div class="hidden_show">
+            <!--非表示はここから-->
+          <p>
+            <i class="fas fa-arrow-alt-circle-right"><a href="https://scholar.google.co.jp/citations?user=ErY4sFMAAAAJ&hl=ja"></i>Google scholar</a>
+            <i class="fas fa-arrow-alt-circle-right"><a href="http://www.research.kobe-u.ac.jp/ans-applmic/Ken%20Yoshida%20home.htm"></i>HomePage</a>
+            <br>Research interest：Professor Yoshida has been expanding his research broadly from Bacillus species to rhizobia and working on the
+            elucidation of new metabolic pathways in bacteria.<strong> In particular, Prof.Yoshida is internationally
+               recognized as a pioneer of research on bacterial inositol metaboism.</strong> For years, Prof. Yoshida has worked as a core member of iBioK programme to
+                promote industry-academia collaboration. He is also working hard to promote the Kobe univisity to the European countries as an FEMS ambassador*,
+                and as a general manager of Kobe University Brussels European Centre.</p>
+        　<p>
+          *Federation of European Microbiological Societies (FEMS) have commenced
+          the creation of a network of honorary FEMS Ambassadors in selected
+          non-European countries. As one of the FEMS Ambassadors, Prof. Ken-ichi
+          Yoshida will help to promote the FEMS mission, vision, and activities of
+          spreading microbiology knowledge, and connecting microbiologists and
+          microbiological societies for benefit of humankind.
+        </p>
+
+          <table class="profile">
+          <tr><th>Academic Degree</th><td>1987 Bachelor, Kyoto University<br>1989 Master, Kyoto University<br>
+          1993 Ph. D.(Doctor of Agriculture), Kyoto University</td></tr>
+          <tr><th>Career</th><td>1990 Assistant professor, Fukuyama University<br>1996-1997 Postdoc, INRA Jouy-en-Josas<br>1999 lecturer Fukuyama University <br>
+          2003 Assosiate Professor, Fukuyama University<br>2004 Assosiate Professor, Kobe Unisersity<br>
+          2009 Professor ,Kobe University <br>2013 Director, Center for EU Studies<br>2014 Executive director, Brussels European Centre, Kobe University<br></td></tr>
+          <tr><th>Affiliated academic organizations</th><td>日本ゲノム微生物学会(庶務幹事)／日本農芸化学会(関西支部参与・全国代議員)／日本分子生物学会／日本生物工学会／植物微生物研究会／グラム陽性菌ゲノム機能会議／米国微生物学会（ASM）</td></tr>
+          </table>
+          <br>
+
+          </div>
+        </div>
+
+    <img src="img/ishikawa.jpg">
+    <h4>Shu ISHIKAWA, Ph.D</h4>
+
+      <div class="hidden_box">
+        <label for="ishikawa"><i class="fas fa-arrow-alt-circle-right"></i>Shu Ishikawa</label>
+        <input type="checkbox" id="ishikawa"/>
+        <div class="hidden_show">
+          <!--非表示はここから-->
+        <p>
+          <i class="fas fa-arrow-alt-circle-right"><a href="https://scholar.google.co.jp/citations?user=ZHM_DSIAAAAJ&hl=ja"></i>Google scholar</a>
+          <br>Research interest: Dr. Ishikawa has been studying the molecular mechanism and functions of the bacterial genes essential for cell growth (cell division and transcription).
+           Based on that experience, he now aims to create <strong>general-purpose high-efficiency bio-process cells</strong>. In addition, he is developing a mothod to efficiently
+            acquire useful bacterial genes from metagenome. He is also interested in the accelerated evolution of lactic acid bacteria.</p>
+
+        <table class="profile">
+        <tr><th>Academic Degree</th><td>1996-1999 Department of Applied Biology, Faculty of Textile Science and Technology, Shinshu University</td></tr>
+        <tr><th>Career</th><td>1999-2001 Researcher, The Scripps Research Institute<br>
+        2001 Research Fellowship, Japan Society for the Promotion of Science (JSPS)<br>
+        2001 Assistant, Nara Institute of Science and Technology<br>
+        2011 Assistant professor, Nara Institute of Science and Technology<br>
+        2016 Associate professor, Kobe University</td></tr>
+        <tr><th>Affiliated academic organizations</th><td>日本ゲノム微生物学会／日本乳酸菌学会／グラム陽性菌ゲノム機能会議</td></tr>
+        </table>
+
+        </div>
+      </div>
+
+<br>
+
+<div class="hidden_box">
+  <label for="lab_member"><i class="fas fa-arrow-alt-circle-right"></i>Lab members</label>
+  <input type="checkbox" id="lab_member"/>
+  <div class="hidden_show">
+    <!--非表示はここから-->
+<br>
+  <table class="member">
+    <tr><th>Prof</th><td>Ken-ichi Yoshida</td></tr>
+    <tr><th>Associate Prof</th><td>Shu Ishikawa</td></tr>
+    <tr><th>Trainee</th><td>Yuzheng Wu</td></tr>
+    <tr><th>D2</th><td>Takahiko Kondo/Eri Kitagawa</td></tr>
+    <tr><th>D1</th><td>Jyunya Yamamoto</td></tr>
+    <tr><th>M2</th><td>Misaki Nakatsuji/Ryo Nishimura/Kohei Makino/Kazumasa Kanda</td></tr>
+    <tr><th>M1</th><td>Kyosuke Kita/Koutarou Mori/Takahiro Yotsui/Cho</td></tr>
+    <tr><th>B4<td>Kano Uda/Mizuki Kimura/Ryotaro Kido/Kaho Fukui/Kentaro Nishioka</td></tr>
+  </table>
+
+  <br>
+
+  Alumni<br>
+  <p><small>
+  ・2019
+　河端 穂奈美／倉本 夏歩／堀川 拓真／山田 拓明／Le Phuong Quynh／木田 優士／西口 智也／西田光希(休学)<br>
+  ・2018<br>
+  田中耕生 (助教)／石田 篤志／宮野 恵／松本 明日香／八木 悠夏／Christophe Michon(研究員)<br>
+  ・2017<br>
+  Kang Don-min／岡田 大／加藤 みずき／木下 翔也／夏目 文音／西畑 省吾／森下 智代／西川 祐資<br>
+  ・2016<br>
+  白江雄介／久世 純子（技術補佐員）<br>
+  ・2015<br>
+  片本 康亮／辻 省吾／本窪田 章博／Sophia Karpenko(仏AgroParisTechより短期留学)／パラスト・マジディアン(INRAより滞在)<br>
+  ・2014<br>
+  角 美有紀／田島 慎太郎／寺川 あやこ／山野 孝太郎／Thi Lan Thanh Bien／Daniel Reuss(独Gottingen大より技術補佐員)
+　　</small></p>
+　</div>
+</div>
+</div>
+</section>
+
+<section class="research" id="research">
+  <h2 class="heading">Research</h2>
+  <br>
+  　<p> We are engaged in reseach aiming at production of useful chemicals by elucidating the genomic functions of <i>Bacillus subtilis</i> and other useuful bacteria. Below are the research topics that we are interested in.</p>
+
+<div id="枯草菌">
+    <h4>●Inositol</h4>
+    <p>Inositol stands for a group of cyclohexanehexol consisting of 9 stereoisomers epimerizing the six hydroxyl groups. Among them, <i>myo</i>-inositol is most abundant in nature and can be supplied at relatively low prices as produced from cheap materials such as rice bran. The other inositol stereoisomers are rare and expensive, but some are known to exert specific physiological effects beneficial for human health. For example, D-<i>chiro</i>-inositol and pinitol (3-<i>O</i>-methyl-D-<i>chiro</i>-inositol) have an insulin-like effect to lower the blood sugar level and are also useful to cure polycystic ovary syndrome. On the other hand, <i>scyllo</i>-inositol has an effect to suppress the aggregation of β-amyloid in the brain, and thus is expected as a remedy for Alzheimer's disease.
+    </p>
+
+    <br>
+    <h4>●Inositol metabolism in <i>B. subtilis</i></h4>
+      <p>・Metabolic engineering of <i>B. subtilis</i> for the bio-production of rare inositol<br>
+      ・Understanding the mechanism of NADPH regeneration in <i>B. subtilis</i><br>
+      ・Functional modification of inositol dehydrogenase<br>
+      ・Elucidation of enzymological and physiological significance of functionally unknown <i>iolH</i> gene</p>
+      <p> We have established metabolic engineering of <i>B. subtilis</i> to convert <i>myo</i>-inositol into <i>scyllo</i>-inositol, a promising therapeutic agent for Alzheimer's disease. In addition, to better understand the deeper cellular system required for the inositol conversion, we are elucidating the NADPH regeneration necessary as a coenzyme for the key enzyme IolW
+      <br><i class="fas fa-arrow-alt-circle-right"><a href="https://microbialcellfactories.biomedcentral.com/articles/10.1186/1475-2859-12-124"></i>An improved
+        <i>B. subtilis</i> cell factory for producing <i>scyllo</i>-inositol, a promising therapeutic agent for Alzheimer’s disease</a></p>
+    <br>
+    <h4>●Secretion of useful proteins by <i>B. subtilis</i></h4>
+    <p>・<i>B. subtilis</i> cells displaying the artificially-designed cellulosome on the surface.</p>
+    <p>Cellulose and hemicellulose are main constituents of non-edible plant biomass and hardly decomposable materials. We aim to create a cellulose-degrading <i>B. subtilis</i> cells displaying the artificially designed cellulosome on the surface.</p>
+    <p>・Improvement of <i>B. subtilis</i> phytase secretion</p>
+    <p>Phytic acid is rich in rice bran as the major storage form of phosphates of cereals and legumes. We aim at improving the efficiency of secretory production of phytase, which produces <i>myo</i>-inositol by trimming off phosphate from phytic acid in rice bran.</p>
+  <br>
+</div>
+
+<div id="geobacillus">
+    <h4>●Inositol metabolism in thermophilic <i>Geobacillus kaustophilus</i> HTA426</h4>
+    <P>・Elucidation of physiological significance of inositol metabolism in <i>G. kaustophilus</i> HTA426<br>
+    ・Regulation of the genes involved in inositol degradation in <i>G. kaustophilus</i> HTA426</p>
+    <p> <i>G. kaustophilus</i> can grow using <i>myo</i>-inositol as the sole carbon source. However, the genes and their regulation involved in the growth mechanism have not been fully elucidated.
+      We are pursuing the possibility to utilize <i>G. kaustophilus</i> for the bio-production of rare inositol.
+    <br><i class="fas fa-arrow-alt-circle-right"><a href="http://mic.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.059980-0"></i>
+      Three inositol dehydrogenases involved in the consumptionn and interconversion of inositol stereoisomers in a thermophilic bacterium, <i>Geobacillus kaustophilus</i> HTA426</a></p>
+    <br>
+    <h4>●Development of efficient transformation method of thermophilic bacteria <i>G. kaustophilus</i></h4>
+    <p><i>G. kaustophilus</i> is an industrially beneficial bacterium. Nevertheless, conventional transformation methods are inefficient and time consuming for this bacterium.
+      We developed a novel method for transforming <i>G. kaustophilus</i> using conjugation plasmid pLS20cat.
+    <br><i class="fas fa-arrow-alt-circle-right"><a href="https://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-018-0969-9"></i>
+      A novel method for transforming the thermophilic bacterium <i>Geobacillus kaustophilus</i></a></p>
+    <br>
+  <h4>●Application of conjugative genetic transfer among Gram-positive bacteria</h4>
+  <p>The conjugative plasmid, pLS20, isolated from <i>B. subtilis</i> natto, has an outstanding capacity for rapid self-transfer. In addition, it can function as a helper plasmid, mediating the mobilization of an independently replicating co-resident plasmid. The oriT sequence of pLS20cat (oriTLS20) was eliminated to obtain the plasmid, pLS20catΔoriT. pLS20catΔoriT was able to mobilize longer DNA segments, up to 113 kb of chromosomal DNA containing oriTLS20, after mixing the liquid cultures of the donor and recipient for only 15 min. This will allow us to develop a novel genetic tool for the rapid, easy, and repetitive mobilization of longer DNA segments into a recipient chromosome.
+  <br><i class="fas fa-arrow-alt-circle-right"><a href="https://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-017-0855-x"></i>Rapid conjugative mobilization of a 100 kb segment of <i>Bacillus subtilis</i> chromosomal DNA is mediated by a helper plasmid with no ability for self-transfer</a></p>
+
+</div>
+
+<div id="根粒菌">
+    <h4>●<i>Bacillus velzensis</i> S141: Promoting symbiotic nitrogen fixing capacity of soybean root nodule bacteria</h4>
+    <p>Soybean symbiont <i>Bradyrhizobium diazoefficience</i> is known to form root nodules for a symbiotic nitrogen fixation with soybean. In a previous study, <i>B. velzensis</i> S141 was isolated as a plant growth-promoting rhizobacterium which enhances the beneficial effect of <i>B. diazoefficience</i> on soybean growth. We aim at revealing the underlying mechanism for the enhancement of the symbiotic nitrogen fixation of <i>B. diazoefficience</i> by <i>B. velzensis </i>S141, in collaboration with Suranaree University of Technology, Thailand. </p>
+    <br>
+    <h4>●PHB production by <i>B. diazoefficience</i></h4>
+    <p>Soybean symbiont <i>B. diazoefficience</i> accumulates a large amount of poly-β-hydroxybutyrate (PHB) in cells, which is one of the promising bioplastics. PHB biosynthesis requires several enzymes involved in the synthesis and the decomposition of PHB. In addition, we found that other proteins called phasins, which stabilize the growing PHB granules, might play an important role in the PHB accumulation. We aim at elucidating the mechanism for the efficient PHB accumulation in <i>B. diazoefficience</i>.
+    <br><i class="fas fa-arrow-alt-circle-right"><a href="https://bmcmicrobiol.biomedcentral.com/articles/10.1186/1471-2180-13-290"></i>PhaP phasins play a principal role in poly-β-hydroxybutyrate accumulation in free-living <i>Bradyrhizobium japonicum</i></a>
+    <br><i class="fas fa-arrow-alt-circle-right"><a href="https://bmcmicrobiol.biomedcentral.com/articles/10.1186/s12866-018-1317-2"></i><i>Bradyrhizobium diazoefficiens</i>
+       USDA110 PhaR functions for pleiotropic regulation of cellular processes besides PHB accumulation</a></p>
+</div>
+
+<div id="乳酸菌">
+    <h4>●Transformation of<i> Leuconostoc</i> genus</h4>
+    <p><i>Leuconostoc</i> are obligatory heterofermentive lactic acid bacteria. In spite of its industrial importance, at present genetic manipulation of Leuconostoc is difficult because of its extremely low transformation efficiency. We aim at establishing its versatile transformation (mainly by protoplast method) using <i>Leu. mesenteroides</i> as a model organism.
+    <br>
+</div>
+</section>
+
+<section class="NEWS" id="NEWS">
+  <h2 class="heading">NEWS</h2>
+  <br>
+  <ul class="scroll-list">
+    <li class="scroll-item">
+      <li class="scroll-item">
+        <time class="date" datetime="2019-07">2019-7</time>
+          <span class="event">共同研究者としてValeria Verroneさんが来日(NewCastle University)。</span>
+      </li>
+      <time class="date" datetime="2019-04">2019-4</time>
+        <span class="event">新4年生5名と外部から新M1生１名、研修生1名が参画。</span>
+    </li>
+    <li class="scroll-item">
+      <time class="date" datetime="2018-02">2018-02</time>
+        <span class="event">吉田教授が日本初のFEMS Ambassadorに就任されました。</span>
+    </li>
+    <li class="scroll-item">
+      <time class="date" datetime="2018-11">2018-11</time>
+        <span class="event">研究室ウェブサイトが新しくなりました。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2018-9">2018-9</time>
+        <span class="event">熱海市で開催されたグラム陽性菌学会に参加しました。Christophe Michonさんが帰国されました。</span>
+    </li>
+        <li class="scroll-item">
+        <time class="date" datetime="2018-4">2018-4</time>
+        <span class="event">新４年生５名と外部から新M１生１名、研修生１名が参画。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2018-2">2018-2</time>
+        <span class="event">田中耕生 助教が退職されました。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2017-4">2017-4</time>
+        <span class="event">新４年生３名と外部から新M１生４名が参画。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2016-9">2016-9</time>
+        <span class="event">Visiting ProfessorとしてDr. Philippe LangellaとDr. Jean-Marc Chatelが1週間滞在しました(Micalis INRA FR)</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2016-4">2016-4</time>
+        <span class="event">科学技術イノベーション研究科が発足しました(当研究室は農学研究科から移籍しました)。石川周准教授が参入しました</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2015-10">2015-10</time>
+        <span class="event">Christophe Michonさんが来日(Micalis INRA FR)。学術研究員(ポスドク)として活躍します。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2015-4">2015-4</time>
+        <span class="event">Ms. Sophia Karpenko 技術補佐員を雇用（仏AgroParisTechからの短期留学。2015年8月末まで）<br>2015年度の新4年生5名と外部からの新M1生2名が参画。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2014-10">2014-10</time>
+        <span class="event">IRANから滞在研究者としてパラスト・マジディアンが合流（2015年8月末まで）。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2014-4">2014-4</time>
+        <span class="event">新4年生が参入。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2014-3">2014-3</time>
+        <span class="event">竹中 慎治が教授昇任。微生物資源化学教育研究分野を設立。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2013-7">2013-7</time>
+        <span class="event">久世 純子 技術補佐員を雇用</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2013-5">2013-5</time>
+        <span class="event">ドイツGoettingen大学Stuelke研よりMr. Daniel Reussを技術補佐員として雇用（2013年12月末まで）。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2012-6">2012-6</time>
+        <span class="event">田中 耕生 iBioK特命助教が参入（2013年4月より自然科学系先端融合研究環助教）。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2011-4">2011-4</time>
+        <span class="event">世良 享子 技術補佐員を雇用（2013年6月末まで）。</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2010-2">2010-2</time>
+        <span class="event">JST ALCAならびにNC-CARPに参画。小谷技術補佐員を雇用（2011年3月末まで)</span>
+    </li>
+    <li class="scroll-item">
+        <time class="date" datetime="2009-12">2009-12</time>
+        <span class="event">吉田 健一が教授に着任して微生物機能化学研究室がAPPLMICの愛称を掲げてスタート。<br>
+          オリジナルスタッフは、教授の吉田に加えて、准教授の竹中 慎治（2014年3月より微生物資源化学教育研究分野教授に昇任）と<br>
+          iBioK特命助教の鈴木 宏和（2011年4月に九州大学農学研究科へ転出、さらに2014年4月より鳥取大学へ異動）の3人体制。</span>
+    </li>
+  </ul>
+
+<h2 class="heading">PHOTOS</h2>
+<!サムネイル画像は100px × 100px>
+<h3>Lab equipment</h3>
+<div id="picture1">
+  <a href="qPCR.jpg" data-ngthumb="thumbs/qPCR.jpg">RT-qPCR</a>
+  <a href="GC.jpg" data-ngthumb="thumbs/GC.jpg">GC</a>
+  <a href="HPLC.jpg" data-ngthumb="thumbs/HPLC.jpg">HPLC</a>
+  <a href="HPLC2.jpg" data-ngthumb="thumbs/HPLC2.jpg">HPLC</a>
+  <a href="fluorescence.jpg" data-ngthumb="thumbs/fluorescence.jpg">fluorescent microscope</a>
+  <a href="plate_reader.jpg" data-ngthumb="thumbs/plate_reader.jpg" >micro plate reader</a>
+  <a href="cleanbench.jpg" data-ngthumb="thumbs/cleanbench.jpg" >clean bench</a>
+  <a href="autoclave.jpg" data-ngthumb="thumbs/autoclave.jpg" >Autoclave</a>
+  <a href="chemdoc.jpg" data-ngthumb="thumbs/chemdoc.jpg" >chemdoc</a>
+  <a href="beans.jpg" data-ngthumb="thumbs/beans.jpg" >phytotron</a>
+  <a href="elepo.jpg" data-ngthumb="thumbs/elepo.jpg" >electroporation machine</a>
+  <a href="nanovue.jpg" data-ngthumb="thumbs/nanovue.jpg" >Nano vue</a>
+  <a href="micro.jpg" data-ngthumb="thumbs/micro.jpg">microscope</a>
+  <a href="flow_cytometry.jpg" data-ngthumb="thumbs/flow_cytometry.jpg">flow cytometry</a>
+  <a href="MinION.jpg" data-ngthumb="thumbs/MinION.jpg">MinION</a>
+  <a href="imaging_plate_reader.jpg" data-ngthumb="thumbs/imaging_plate_reader.jpg">imaging plate reader</a>
+</div>
+
+<h3>Meet our members</h3>
+<div id="picture2">
+  <a href="member1.jpg" data-ngthumb="thumbs/member1.jpg"</a>
+  <a href="member2.jpg" data-ngthumb="thumbs/member2.jpg"></a>
+  <a href="member3.jpg" data-ngthumb="thumbs/member3.jpg"></a>
+  <a href="member4.jpg" data-ngthumb="thumbs/member4.jpg"></a>
+  <a href="member5.jpg" data-ngthumb="thumbs/member5.jpg" ></a>
+  <a href="member6.jpg" data-ngthumb="thumbs/member6.jpg" ></a>
+  <a href="member7.jpg" data-ngthumb="thumbs/member7.jpg" ></a>
+</div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="heading">CONTACT</h2>
+  <br>
+  <div class="contact-wrapper">
+    <div class="contact-box">
+      <i class="far fa-envelope fa-3x"></i>
+      <div>Email</div>
+      kenyoshi(AT)kobe-u.ac.jp (AT)=@
+    </div>
+
+    <div class="contact-box">
+      <i class="fas fa-phone fa-3x"></i>
+      <div>Telephone</div>
+      078-803-5891<br>(week day 9:00～17:00)
+    </div>
+
+    <div class="contact-box">
+      <i class="fas fa-fax fa-3x"></i>
+      <div>Fax</div>
+      078-803-5891
+    </div>
+  </div>
+
+  <br>
+  <h4>Admission</h4>
+  <p>Join our lab! <br>
+  Since 2016, our lab belongs to the Graduate School of Science, Technoogy and Innovation.</p>
+
+  <table class="jyukensei">
+    <tr><th>recruitment</th><td>Graduate School</td></tr>
+    <tr><th>application</th><td>Please contact us by email.</td></tr>
+    <tr><th>request for information</th><td>Graduate School of Science,Technology and Innovation, Student Section
+    <br>1-1 Rokkodai-cho, Nada-ku Kobe, JAPAN 657-8501
+    <br>Graduate School of Science,Technology and Innovation
+    <br><br>TEL: 078-807-5474
+    <br>E-mail: stin-kyomu(AT)office.kobe-u.ac.jp<br>
+    [(AT)=@]</td></tr>
+  </table>
+
+  <div class="hidden_box">
+    <label for="privacy"><i class="fas fa-arrow-alt-circle-right"></i>Privacy Policy</label>
+    <input type="checkbox" id="privacy"/>
+    <div class="hidden_show">
+      <!--非表示はここから-->
+      <p>We comply with laws and other norms concerning personal information and work hard to protect your personal information.</p>
+      <h5>Collecting personal information</h5>
+      <p>Personal information may be collected for the following purposes.<br>
+      ・Inquiries<br>
+      ・Communicating with you</p>
+      <h5>Using your personal information</h5>
+      <p>We use your private information for the following purposes.<br>
+      ・Communicating with you<br>
+      ・For answers to inquiries<br>
+      ・Providing our research information</p>
+      <h5>Providing your personal information to third parties.</h5>
+      <p>We do not disclose or provide personal information obtained to third parties except in the following cases.<br>
+      ・if we have your consent<br>
+      ・In case of a request from a public office (police etc.) <br>
+      <h5>Disclosure and correction of personal information</h5>
+      <p>We are sure to respond reliably to your request for personal information disclosure, correction, delection etc.
+      </p>
+</section>
+
+<section class="access" id="access">
+  <h2 class="heading">ACCESS</h2>
+  <br>
+  <p><i class="fas fa-map-marker-alt"></i>1-1 Rokkodai, Nada, Kobe 657-8501, Kobe University, Graduate School of Agriculture Building E 6th Floor
+  E601:labolatory, E654:professor's office<br><br>
+  Access: Get off at "Rokko Station" (Hankyu line) and walk to the north for about 15 minutes. Or get off at  "Shindai Bunri nogakubumae" (Kobe City Bus 36).
+  ※For more information, please see the following page:<a href="http://www.ans.kobe-u.ac.jp/nougakubu/access.html">how to access</a></p><br>
+<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.209478201774!2d135.23207785169006!3d34.725113830332035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008c1a02ad15f7%3A0x3bf9f898df44a854!2z56We5oi45aSn5a2m6L6y5a2m6YOo!5e0!3m2!1sja!2sjp!4v1528698706366"  width="70%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe></iframe></div>
+<br><i class="fas fa-arrow-circle-up"><a href="#top"></i>Page Top</a>
+</section>
+
+<hr>
+<footer class="footer">
+  Copyright &copy; APPLMIC 2019 All rights reserved.<br>Created by Kyosuke Kita
+</footer>
+
+</article>
+</body>
+</html>

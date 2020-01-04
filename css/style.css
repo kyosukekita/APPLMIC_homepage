@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+
+body{
+  font-family:'メイリオ',sans-serif;
+  margin:0 auto;
+  text-align:center;
+  font-size:100%;
+  line-height: 1.5;
+  max-width:100%;
+}
+
+p{
+  text-align:left;
+  display:inline-block;
+  width:65%;
+}
+
+a {color:#20b2aa}
+a:hover {color:#20b2aa}
+
+/*headerのセクション*/
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  height:50px;
+  padding:0 0 10px;
+  z-index:1;
+  background-color:#fff;;
+  width:100%;
+  display:table;
+}
+
+header h1, nav {
+display:table-cell;
+padding:10px;}
+
+header a{
+  color:inherit;
+  text-decoration:none;
+}
+
+header h1 {color:#ffd700;
+font-family:'Sniget', cursive;}
+
+header nav {
+text-align:right;
+vertical-align:bottom;}
+
+header ul {
+font-size:14px;
+line-height:1;
+margin:0 10px 10px 0}
+
+header ul li {
+margin-left:3px;
+display:inline-block}
+
+header ul li::after {content:' |'}
+header ul li:last-child::after {content:''}
+header ul li a {color:#000;}
+
+
+/*サイトトップのセクション*/
+.top_wrapper{
+ padding:10px;
+ padding-bottom:30px;
+ background:linear-gradient(-45deg,#c6ffdd,#fbd786, #f7797d);
+}
+
+.top{
+  text-align:left;
+  display:inline-block;
+}
+
+/*headingのセクション*/
+.heading{
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom:15px;
+  letter-spacing: 2px;
+  font-size:3rem;
+}
+
+.heading::before,
+.heading::after{
+  content:'';
+  position: absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  bottom::5px;
+}
+
+.site-title-sub{
+  margin:200px 0 30px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-family:'Indie Flower', cursive;
+  color:#000;
+}
+
+.site-title-sub::before,
+.site-title-sub::after{
+ content:'';
+ display: inline-block;
+ width: 10%;
+ height: 2px;
+ margin: 0 30px;
+ background-color:#000;
+ vertical-align:middle;
+}
+
+.site-title{
+  margin:50px 0 30px;
+  font-size: 8rem;
+  font-weight:bold;
+  font-family:'Indie Flower', cursive;
+  color:#fff;
+}
+
+/*about usのセクション*/
+.about{
+  padding:80px 30px;
+  background-color:#E6E6E6;
+  color:#333;
+}
+
+/*peopleのセクション*/
+.people{
+  padding:80px 30px;
+  background-color:#fff;
+  color:#333;
+}
+
+/*要素の非表示と表示*/
+.hidden_box {
+  margin: 2em 0;/*前後の余白*/
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 15px;
+    font-weight: bold;
+    border: solid 2px black;
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+
+.research{
+  padding:80px 30px;
+  background-color:#eff2ea;
+  color:#333;
+}
+
+.research h4{
+  text-align:left;
+  display:inline-block;
+  width:65%;
+}
+
+.NEWS{
+  padding:80px 30px;
+  background-color:#d6d5d4;
+}
+
+.scroll-list{
+  max-height:250px;
+  width:80%;
+  overflow-y:auto;
+  list-style-type:none;
+  background-color:#fff;
+  padding: 0;
+  margin:0;
+  align: center;
+  margin-left:auto;margin-right:auto;
+}
+
+.scroll-list .date{
+  display: inline-block;
+  width:10%;
+  text-align:left;
+  font-size:0.8rem;
+}
+
+.scroll-list .event{
+  display:inline-block;
+  width:80%;
+  text-align:left;
+  font-size:0.9rem;
+  white-space:nowrap;
+}
+
+.contact{
+  padding:80px 30px;
+  background-color:#fff;
+  color:#333;
+}
+
+.contact-wrapper{
+  display: table;
+  width:80%;
+  margin: 50px auto 0;
+  table-layout:fixed;
+}
+
+.contact-box{
+  display: table-cell;
+}
+
+.access{
+  padding:80px 30px;
+  background: #eaeaea;
+}
+
+.footer{
+  width:100%;
+}

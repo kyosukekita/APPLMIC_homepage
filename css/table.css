@@ -1,0 +1,56 @@
+table.profile {
+width:65%;  /* テーブル全体の幅 */
+margin-left:auto;margin-right:auto;
+}
+
+table.profile th{
+width:10%;
+text-align:center;
+background-color:#A9F5F2;
+border-bottom:dotted #666666 1px;
+}
+
+table.profile td{
+padding:10px;
+text-align:left;
+background-color:#FFFFCC;
+border-bottom:dotted #666666 1px;
+}
+
+table.member {
+width:65%;  /* テーブル全体の幅 */
+margin-left:auto;margin-right:auto;
+}
+
+table.member th{
+width:15%;
+background-color:#FFCCCC;
+border-bottom:dotted #666666 1px;
+}
+
+table.member td{
+padding:10px;
+background-color:#FFFFCC;
+border-bottom:dotted #666666 1px;
+}
+
+table.jyukensei {
+width:65%;  /* テーブル全体の幅 */
+align: center;
+margin-left:auto;margin-right:auto;
+}
+
+table.jyukensei th{
+width:15%;
+padding:5px;
+text-align:center;
+background-color:#dcffdb;
+border-bottom:dotted #666666 1px;
+}
+
+table.jyukensei td{
+padding:10px;
+text-align:left;
+background-color:#FFFFCC;
+border-bottom:dotted #666666 1px;
+}
